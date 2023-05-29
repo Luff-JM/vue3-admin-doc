@@ -4,7 +4,6 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'Vue3 Admin',
   description: '一个开箱即用的Vue3后台管理前端框架',
-  base: '/vue3-admin-doc/',
   themeConfig: {
     logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
