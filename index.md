@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /markdown-examples
+      link: /guide/introduction
     - theme: alt
       text: 在线预览
       link: https://vue3-ts-admin-brown.vercel.app

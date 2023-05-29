@@ -9,22 +9,31 @@ export default defineConfig({
     logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      // { text: 'Home', link: '/' },
+      // { text: 'Examples', link: '/markdown-examples' },
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
+    sidebar: createSidebar(),
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/Luff-JM/vue3-ts-admin' },
     ],
   },
 });
+
+function createSidebar() {
+  return {
+    '/': [
+      {
+        text: '指南',
+        children: [
+          { text: '介绍', link: '/guide/introduction' },
+          {
+            text: '开始',
+            link: '/guide/',
+          },
+        ],
+      },
+    ],
+  };
+}
