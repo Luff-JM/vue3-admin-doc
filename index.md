@@ -19,7 +19,7 @@ features:
   - title: 📦 开箱即用
     details: 轻量快速，开箱即用
   - title: 🔥 最新技术栈
-    details: 基于 Vue3、Vite、TypeScript 等最新技术栈
+    details: 基于 Vue3、Vite、TypeScript、Pinia 等最新技术栈
   - title: 🌈 Tailwind CSS
     details: 支持 Tailwind CSS 原子类样式
   - title: 🔑 权限管理

@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress';
+import { DefaultTheme, defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,19 +21,18 @@ export default defineConfig({
   },
 });
 
-function createSidebar() {
-  return {
-    '/': [
-      {
-        text: '指南',
-        children: [
-          { text: '介绍', link: '/guide/introduction' },
-          {
-            text: '开始',
-            link: '/guide/',
-          },
-        ],
-      },
-    ],
-  };
+function createSidebar(): DefaultTheme.Sidebar {
+  return [
+    {
+      text: '指南',
+      items: [
+        { text: '介绍', link: '/guide/introduction' },
+        {
+          text: '目录结构',
+          link: '/guide/structure',
+        },
+      ],
+      collapsed: true,
+    },
+  ];
 }
